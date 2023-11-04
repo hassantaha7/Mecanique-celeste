@@ -1,0 +1,165 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #e6eff2;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #e6eff2;
+    background-color: #00254B;
+    margin: 0;
+    padding: 0;
+}
+
+
+#parameteres > h2
+{
+    font-size: 20px;
+    font-weight: normal;
+    border-color: #f4d47c;
+    border-style: solid;
+    border-width: 1px 1px 1px 10px;
+    background-color: #001830;
+}
+
+h3
+{
+    font-weight:normal;
+    font-size: 15px; 
+}
+label
+{
+    display: inline-block;
+    width: 30%;
+}
+
+input
+{
+    color: #0f1621;
+    background-color: #e6eff2;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+input[type=range], input[type=button]
+{
+    cursor: pointer;
+}
+
+#main
+{
+    position: relative;
+    width: 800px;
+    height: 600px;
+    
+}
+
+#affichage
+{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    border: solid 1px #e6eff2;
+}
+
+#parameteres
+{
+    width: 400px;
+    background-color: rgba(100, 116, 143, 0.2);
+    border-radius: 0 0 10px 0;
+    padding-bottom: 30px;
+}
+
+#parameteres > p
+{
+    margin: 10px 15px 20px 15px;
+    text-align: left;
+}
+
+div.parametre
+{
+    margin: 10px 60px 0 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.parametre:last-child
+{
+    justify-content: flex-end;
+}
+
+div.parametre:last-child > input
+{
+    margin-left: 5px;
+    width: 80px;
+}
+
+div.parametre:last-child > input:hover
+{
+    transition: 0.5s;
+    align-items: left;
+    color: #e6eff2;
+    background-color: #0f1621;
+}
+
+/* Header styles */
+#main_zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#ctrls
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0 5px 0;
+    user-select: none;
+}
+
+#ctrls > img
+{
+    margin: 0 5px 0 5px;
+}
+
+#ctrls > *:hover
+{
+    cursor: pointer;
+}
+
+footer
+{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #main {
+        
+    }
+
+    #parameteres {
+        padding: 10px;
+    }
+}
